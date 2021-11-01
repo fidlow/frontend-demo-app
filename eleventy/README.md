@@ -23,6 +23,6 @@ npm watch
 
 ## Содержание
 
-- Папка "html_bootstrap". Здесь вы найдете пример HTML + Bootstap.
-- Папка "html_bootstrap_js". Здесь вы найдете пример HTML + Bootstap + JS.
-- Папка "html_bootstrap_custom". Здесь вы найдете пример HTML + Bootstap + JS c кастомными переменными.
+- Папка "dist/html_bootstrap". Здесь вы найдете пример HTML + Bootstap.
+- Папка "dist/html_bootstrap_js". Здесь вы найдете пример HTML + Bootstap + JS.
+- Папка "dist/html_bootstrap_custom". Здесь вы найдете пример HTML + Bootstap + JS c кастомными переменными.
