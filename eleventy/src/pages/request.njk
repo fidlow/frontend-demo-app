@@ -1,0 +1,29 @@
+---
+pagination:
+  data: data
+  size: 1
+  alias: data
+permalink: "{{ data.folder }}/request.html"
+layout: base.njk
+title: "{{ data.title }} | Аккордеон"
+---
+<div class="container">
+  <div class="row my-5">
+    <div class="col-12">
+      <h1 class="text-center text-primary">Делаем запросы</h1>
+    </div>
+  </div>
+  <div class="d-grid col-4 gap-2 mx-auto">
+    <button class="btn btn-primary" id="get-posts">Получить посты</button>
+    <button class="btn btn-primary" id="post-posts">Отправить посты</button>
+  </div>
+</div>
+<div class="container">
+  <div class="row my-5" id="to-display">
+      <div class="col-7" id="request"> </div>
+      <div class="col-5" id="response"></div>
+  </div>
+</div>
+<div class="col my-4"></div>
+</div>
+<script src='./js/request.js'></script>

@@ -1,0 +1,28 @@
+---
+pagination:
+  data: data
+  size: 1
+  alias: data
+  before: function(data) {
+    return data.filter(_data => _data.isJs === true)
+permalink: "{{ data.folder }}/meme.html"
+layout: base.njk
+title: "{{ data.title }} | Аккордеон"
+---
+<div class="container">
+  <div class="row my-5">
+    <div class="col-12">
+      <h1 class="text-center text-primary">Делаем мемы</h1>
+    </div>
+  </div>
+  <div class="d-grid col-4 mx-auto">
+    <button class="btn btn-primary" id="get-memes">Получить мем</button>
+  </div>
+  <div class="col my-4">
+    <div class="d-none text-center" id="image-to-display">
+      <img id="loaded-meme" src="" height="500" class="rounded" alt="meme" >
+    </div>
+    <div id="text-to-hide" class="text-center">Тут будет мем.</div>
+  </div>
+</div>
+<script src='./js/meme.js'></script>

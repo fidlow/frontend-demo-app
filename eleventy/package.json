@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-bootstrap",
+  "version": "1.0.0",
+  "description": "Здесь представлены примеры страниц HTML c Bootstrap, а также с JS, реализующий работу с REST API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --port=8081",
+    "build": "eleventy && npm run scss && npm run js",
+    "scss": "gulp sass && gulp dist-css",
+    "css": "gulp dist-css",
+    "js": "gulp dist-js",
+    "watch": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "bootstrap": "^5.1.3",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-rename": "^2.0.0"
+  }
+}

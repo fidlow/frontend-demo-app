@@ -1,0 +1,7 @@
+:root {
+  --color-text: #e2b4bd;
+  --color-bg: #C4F1BE;
+}
+.bg-my {
+  background-color: var(--color-bg);
+}
