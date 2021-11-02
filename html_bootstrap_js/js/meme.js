@@ -1,7 +1,9 @@
 const getMemesButtonElement = document.getElementById('get-memes');
 getMemesButtonElement.addEventListener('click', createMeme);
+
 const textToHideElement = document.getElementById('text-to-hide');
 const imageToDisplayElement = document.getElementById('image-to-display');
+
 function getMemes () { fetch("https://api.imgflip.com/get_memes")
   .then((response) => {
     return response.json();
@@ -48,6 +50,7 @@ function createMeme() {
     
   });
 }
+
 function getAllMemes() {
   const allMemesHtml = responseData.data.memes.reduce((acc, meme) => {
     return acc + `${meme.id}<img id="loaded-meme" src="${meme.url}" height="500" class="rounded" alt="meme" >`
