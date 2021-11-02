@@ -1,3 +1,4 @@
 eleventy/node_modules/
 eleventy/dist/
 eleventy/package-lock.json
+.vscode
