@@ -1,13 +1,17 @@
----
-pagination:
-  data: data
-  size: 1
-  alias: data
-  before: function(data) {
-    return data.filter(_data => _data.isJs === true)
-permalink: "{{ data.folder }}/meme.html"
-layout: base.njk
-title: "{{ data.title }} | Аккордеон"
+---js
+{
+pagination: {
+  data: 'data',
+  size: 1,
+  alias: 'data',
+  before(data) {
+    return data.filter(data => data.isJs)
+  }
+},
+permalink: "{{ data.folder }}/meme.html",
+layout: "base.njk",
+title: "{{ data.title }} | Мем"
+}
 ---
 <div class="container">
   <div class="row my-5">

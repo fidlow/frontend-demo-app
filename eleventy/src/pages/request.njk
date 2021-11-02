@@ -1,11 +1,17 @@
----
-pagination:
-  data: data
-  size: 1
-  alias: data
-permalink: "{{ data.folder }}/request.html"
-layout: base.njk
-title: "{{ data.title }} | Аккордеон"
+---js
+{
+pagination: {
+  data: 'data',
+  size: 1,
+  alias: 'data',
+  before(data) {
+    return data.filter(data => data.isJs) 
+  }
+},
+permalink: "{{ data.folder }}/request.html",
+layout: "base.njk",
+title: "{{ data.title }} | Запросы"
+}
 ---
 <div class="container">
   <div class="row my-5">
