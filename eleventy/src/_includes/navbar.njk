@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link{% if page.url == '/' + data.folder + '/index.html'  %} active{% endif %}" href="/{{ data.folder }}">Главная</a>
+          <a class="nav-link{% if page.url == '/' + data.folder + '/index.html'  %} active{% endif %}" href="/{{ data.folder }}/index.html">Главная</a>
         </li>
         <li class="nav-item">
           <a class="nav-link{% if page.url == '/' + data.folder + '/accordion.html'  %} active{% endif %}" href="/{{ data.folder }}/accordion.html">Аккордеон</a>
@@ -20,8 +20,7 @@
         </li>
             <li class="nav-item">
           <a class="nav-link{% if page.url == '/' + data.folder + '/meme.html'  %} active{% endif %}" href="/{{ data.folder }}/meme.html">Мемы</a>
-        </li>
-        {% endif %}        
+        </li>{% endif %}        
       </ul>
     </div>
   </div>
