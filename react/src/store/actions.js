@@ -10,6 +10,5 @@ export const doReset = () => ({
 });
 
 export const reset = () => (dispatch, getState) => {
-  console.log('aaaaa')
   dispatch(doReset());
 };
