@@ -1,4 +1,8 @@
 eleventy/node_modules/
 eleventy/dist/
+react/node_modules/
+vuejs/node_modules/
 eleventy/package-lock.json
+react/package-lock.json
+vuejs/package-lock.json
 .vscode
